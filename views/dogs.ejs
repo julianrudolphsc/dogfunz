@@ -1,0 +1,27 @@
+<% include partials/header%>
+
+<div class="container">
+  <div class="row">
+    <div class="jumbotron text-center">
+      <h3>Look at these little fuckers!</h3>
+      <p><a href="/dogs/new">Add New</a></p>
+    </div>
+  </div>
+
+  <div class="row">
+    <% dogs.forEach(function(dog){ %>
+      <div class="col-md-3 col-sm-6">
+        <div class="thumbnail">
+          <img src="<%= dog.image%>" alt="<%= dog.name%>">
+          <div class="caption text-center">
+            <h3><%= dog.name%></h3>
+          </div>
+
+        </div>
+    </div>
+    <% }); %>
+  </div>
+
+</div>
+
+<% include partials/footer%>

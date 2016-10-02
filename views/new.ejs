@@ -1,0 +1,24 @@
+<% include partials/header %>
+
+<div class="container">
+  <div class="row">
+    <div class="col-md-4 col-md-offset-4">
+      <h1 class="text-center">Add A Dog</h1>
+      <form action="/dogs/new" method="POST">
+        <div class="form-group">
+          <label for="name">Name: </label>
+          <input type="text" name="name" placeholder="Enter name..." class="form-control">
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image: </label>
+          <input type="text" name="image" placeholder="Input Photo" class="form-control">
+        </div>
+
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>
+
+<% include partials/footer%>
